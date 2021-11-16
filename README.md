@@ -12,3 +12,6 @@
 - Método para acessar e adicionar uma classe a um elemento (`.classList.Add()`) 
 - Componentes independentes
 - Propriedade innerText
+- propriedade target
+- Propriedade parentElement
+- Metodo toggle
