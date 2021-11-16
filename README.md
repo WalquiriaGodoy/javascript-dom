@@ -15,3 +15,4 @@
 - propriedade target
 - Propriedade parentElement
 - Metodo toggle
+- Uso de IIFE (Immediately-Invoked Function Expression)

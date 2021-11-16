@@ -1,5 +1,5 @@
-// Define a função criar tarefa:
-const criarTarefa = (evento) => {
+(() => {
+const criarTarefa = (evento) => {                                   // Define a função criar tarefa:
     evento.preventDefault()                                         // Apaga eventos prévios do parâmetro passado para a função:
     
     const lista = document.querySelector('[data-list]')             // Procura o elemento que contém a lista:
@@ -33,3 +33,5 @@ const concluirTarefa = (evento) => {
     const tarefaCompleta = botaoConclui.parentElement              // seleciona o pai do elemento que foi clicado
     tarefaCompleta.classList.toggle('done')                        // acessa a lista de classes e o método toggle coloca ou retira a classe "done"
 }
+
+}) ()
