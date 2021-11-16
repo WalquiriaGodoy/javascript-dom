@@ -15,5 +15,8 @@
 - propriedade target
 - Propriedade parentElement
 - Metodo toggle
-- Uso de IIFE (Immediately-Invoked Function Expression)
 - Método `.remove`
+- Uso de IIFE (Immediately-Invoked Function Expression)
+- Encapsulamento
+- Módulos
+- Same Origin Police e CORS

@@ -1,4 +1,6 @@
-(() => {
+import BotaoConclui from "./componentes/concluiTarefa.js"   
+import BotaoDeleta from "./componentes/deletaTarefa.js"
+
 const criarTarefa = (evento) => {                                   // Define a função criar tarefa:
     evento.preventDefault()                                         // Apaga eventos prévios do parâmetro passado para a função:
     
@@ -20,34 +22,3 @@ const criarTarefa = (evento) => {                                   // Define a 
 
 const novaTarefa = document.querySelector('[data-form-button]')    //define constante que procura o elemento com seletor "data-atributs" correspondente ao botão
 novaTarefa.addEventListener('click', criarTarefa)                  //adiciona um escutador de eventos ao botão anterior e, se o evento click acontecer, chama a função "criar tarefa"
-
-const BotaoConclui = () => {
-    const botaoConclui = document.createElement('button')          //define um componente que cria um elemento botão
-    botaoConclui.classList.add('check-button')
-    botaoConclui.innerText = 'concluir'
-    botaoConclui.addEventListener('click', concluirTarefa)         //se o botão for clicado chama a função concluir tarefa         
-    return botaoConclui
-}
-
-const concluirTarefa = (evento) => {
-    const botaoConclui = evento.target                             // seleciona o alvo do evento
-    const tarefaCompleta = botaoConclui.parentElement              // seleciona o pai do elemento que foi clicado
-    tarefaCompleta.classList.toggle('done')                        // acessa a lista de classes e o método toggle coloca ou retira a classe "done"
-}
-
-const BotaoDeleta = () => {
-    const botaoDeleta = document.createElement('button')
-    botaoDeleta.innerText = 'Deletar'
-    botaoDeleta.addEventListener('click', deletarTarefa)
-
-    return botaoDeleta
-}
-
-const deletarTarefa = (evento) => {
-    const botaoDeleta = evento.target
-    const tarefaCompleta = botaoDeleta.parentElement
-    tarefaCompleta.remove()
-    return botaoDeleta
-}
-
-}) ()
