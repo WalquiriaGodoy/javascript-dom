@@ -8,5 +8,7 @@
 - Percorrendo a árvore do DOM (`document.querySelector()`)
 - Métodos para criar um elemento (`document.createElement()`)
 - Método para anexar um elemento dentro de outro (`.appendChild()`)
-- Método innerHTML
+- Propriedade innerHTML
 - Método para acessar e adicionar uma classe a um elemento (`.classList.Add()`) 
+- Componentes independentes
+- Propriedade innerText
