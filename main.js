@@ -8,9 +8,14 @@ const criarTarefa = (evento) => {                                   // Define a 
     const input = document.querySelector('[data-form-input]')       // Procura o elemento correspondente ao input no formulário:
     const valor = input.value                                       // Guarda o conteúdo/valor do input dentro da constante "valor"
 
+    const calendario = document.querySelector('[data-form-date]')
+    const data = moment(calendario.value)
+
+    const dataFormatada = data.format('DD/MM/YYYY')
+
     const tarefa = document.createElement('li')                     // Cria um elemento do tipo li
     tarefa.classList.add('task')                                    // Acessa a lista de classes e adiciona uma classe
-    const conteudo = `<p class="content">${valor}</p>`              // Transforma o valor recebido no input em html:
+    const conteudo = `<p class="content">${dataFormatada} * ${valor}</p>`              // Transforma o valor recebido no input em html:
     
     tarefa.innerHTML = conteudo                                     // acessa o conteúdo da tarefa e troca pelo recebido no input
     tarefa.appendChild(BotaoConclui())                              // adiciona o novo botão como filho da tarefa
