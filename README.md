@@ -2,7 +2,7 @@
 
 ## Formação Alura Front End
 ---
-### Conteúdo
+### Conteúdo Módulo I
 - Como construir uma página dinâmica
 - Seletores "data-attributes"
 - Percorrendo a árvore do DOM (`document.querySelector()`)
@@ -20,3 +20,8 @@
 - Encapsulamento
 - Módulos
 - Same Origin Police e CORS (plugin live server-VSC)
+
+### Conteúdo Módulo II
+- Utilizar componente de calendário
+- Biblioteca moment.js
+- Desestruturar objetos em JavaScript
