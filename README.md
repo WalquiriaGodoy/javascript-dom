@@ -25,3 +25,6 @@
 - Utilizar componente de calendário
 - Biblioteca moment.js
 - Desestruturar objetos em JavaScript
+- Salvar dados no navegador utilizando `SessionStorage`
+- Armazenar dados sem encerrar a sessão com e `LocalStorage`
+- Transformar objetos em string utilizando `JSON.stringify()`
