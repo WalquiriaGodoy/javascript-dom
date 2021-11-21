@@ -31,3 +31,5 @@
 - Iterar sobre os itens do LocalStorage (`forEach`)
 - Utilizar o curto circuito para verificação lógica
 - Converter os itens que antes eram strings em objetos com JSON.parse
+- Filtrar elementos de um array (`indexOf() === -1`)
+- Ordenar elementos do LocalStorage (`.sort(a, b)`)
