@@ -33,3 +33,5 @@
 - Converter os itens que antes eram strings em objetos com JSON.parse
 - Filtrar elementos de um array (`indexOf() === -1`)
 - Ordenar elementos do LocalStorage (`.sort(a, b)`)
+- Alterar um estado utilizando operador de negação
+- Remover dados do LocalStorage utilizando o método splice
